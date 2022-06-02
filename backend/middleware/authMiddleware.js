@@ -15,7 +15,13 @@ const authMiddleware=asyncHandler(async(req,res,next)=>{
     
     
     const user=await userModel.findOne({ _id:id })
-    req.user=user
+    if(user){
+        req.user=user
+    }
+    else {
+        throw new Error ('token is invalid !')
+    }
+   
     
    }
 

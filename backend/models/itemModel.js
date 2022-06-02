@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const itemSchema=new mongoose.Schema({
 
-    title:{
+    description:{
         type:String,
         required:true
     },
