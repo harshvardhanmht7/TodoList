@@ -77,7 +77,6 @@ export const updateItem = asyncHandler(async (req, res) => {
     if (req.body.description) {
       item[0].description = req.body.description;
     }
-    console.log(item);
 
     item[0].save();
 
