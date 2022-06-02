@@ -6,7 +6,7 @@ const Router=express.Router()
 
 
 Router.route('/register').post(registerUser);
-Router.route('/login').get(authMiddleware,loignUser);
+Router.route('/login').get(loignUser);
 
 
 
